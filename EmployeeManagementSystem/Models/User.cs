@@ -1,11 +1,11 @@
-﻿using SQLite; // ✅ Use this instead of SQLite.Net.Attributes
+﻿using SQLite; 
 using System;
 
 namespace EmployeeManagementSystem.Models
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement] // ✅ Ensures ID auto-increments
+        [PrimaryKey, AutoIncrement] 
         public int Id { get; set; }
 
         [NotNull]
@@ -15,6 +15,6 @@ namespace EmployeeManagementSystem.Models
         //public double Salary { get; set; }
         public string EmployeeName { get; set; }
 
-        public static User CurrentUser { get; set; } // Keeps track of the logged-in user
+        public static User CurrentUser { get; set; } 
     }
 }
