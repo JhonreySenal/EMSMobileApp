@@ -21,7 +21,7 @@ namespace EmployeeManagementSystem.Database
         }
     
 
-        // 🟩 User Management
+      
         public void AddUser(User user)
         {
             _database.Insert(user);
@@ -37,7 +37,7 @@ namespace EmployeeManagementSystem.Database
             return _database.Table<User>().ToList();
         }
 
-        // 🟩 Task Management
+      
         public void AddTask(Tasks task)
         {
             _database.Insert(task);
